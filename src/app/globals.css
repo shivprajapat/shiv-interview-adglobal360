@@ -16,3 +16,16 @@ body {
 ::-webkit-scrollbar-thumb {
   @apply bg-primary-100 rounded-lg;
 }
+
+/* # aos */
+[data-aos="fade-up"] {
+  transform: translate3d(0, 50px, 0);
+}
+
+[data-aos="reveal-left"] {
+  clip-path: inset(0 100% 0 0);
+}
+
+[data-aos="reveal-left"].aos-animate {
+  clip-path: inset(0);
+}

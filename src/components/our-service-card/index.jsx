@@ -4,9 +4,13 @@ import Link from "next/link";
 
 import { iconLeftArrow } from "@/assets/images";
 
-const OurServiceCard = ({ image, title, description }) => {
+const OurServiceCard = ({ image, title, description, delay }) => {
   return (
-    <div className=" bg-white shadow-[0_0_4px_-0_rgba(0,0,0,0.16)]">
+    <div
+      className=" bg-white shadow-[0_0_4px_-0_rgba(0,0,0,0.16)]"
+      data-aos="fade-up"
+      data-aos-delay={delay}
+    >
       <Link href="#">
         <Image
           src={image}

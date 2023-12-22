@@ -7,7 +7,7 @@ const OurTeamCard = ({ name, position, image, description }) => {
   const socialBtnStyle =
     "border border-white rounded-full w-10 h-10 flex items-center justify-center transition-all duration-300 hover:bg-secondary-200";
   return (
-    <div className="bg-white shadow-[0_0_4px_-0_rgba(0,0,0,0.16)] h-fit group">
+    <div className="bg-white shadow-[0_0_4px_-0_rgba(0,0,0,0.16)] h-fit group" data-aos="fade-up" data-aos-delay="200">
       <div className="relative overflow-hidden">
         <Image className="h-96 w-full object-cover" src={image} alt={name} />
         <div className="absolute h-full w-full bg-secondary-200/80 flex items-center justify-center -bottom-10 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300 px-8 text-center">

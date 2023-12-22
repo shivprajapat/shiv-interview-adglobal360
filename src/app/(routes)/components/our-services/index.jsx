@@ -16,31 +16,37 @@ const OurServices = () => {
       title: "Business Services",
       image: imgService1,
       description: "The tiny ship today stiller",
+      delay: "100",
     },
     {
       title: "Business Services",
       image: imgService2,
       description: "The tiny ship today stiller",
+      delay: "200",
     },
     {
       title: "Business Services",
       image: imgService3,
       description: "The tiny ship today stiller",
+      delay: "300",
     },
     {
       title: "Business Services",
       image: imgService4,
       description: "The tiny ship today stiller",
+      delay: "100",
     },
     {
       title: "Business Services",
       image: imgService5,
       description: "The tiny ship today stiller",
+      delay: "200",
     },
     {
       title: "Business Services",
       image: imgService6,
       description: "The tiny ship today stiller",
+      delay: "300",
     },
   ];
   return (

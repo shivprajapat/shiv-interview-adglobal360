@@ -5,11 +5,17 @@ import { Heading } from "@/components";
 import GetAQuotes from "../get-quotes";
 import { iconGoals, iconMissions, iconVision, imgAbout } from "@/assets/images";
 
-const AboutCard = ({ title, icon }) => {
+const AboutCard = ({ title, icon, delay }) => {
   return (
-    <div className="border border-[rgba(0, 0, 0, 0.20)] rounded-[10px] p-4 text-center">
+    <div
+      className="border border-[rgba(0, 0, 0, 0.20)] rounded-[10px] p-4 text-center"
+      data-aos="fade-up"
+      data-aos-delay={delay}
+    >
       <Image src={icon} alt={title} className="mb-3 mx-auto" />
-      <h5 className="text-secondary-200 text-xl xl:text-3xl font-medium">{title}</h5>
+      <h5 className="text-secondary-200 text-xl xl:text-3xl font-medium">
+        {title}
+      </h5>
     </div>
   );
 };
@@ -20,25 +26,30 @@ const About = () => {
         <Heading title="About our company" />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-16 xl:gap-28">
           <div>
-            <Image src={imgAbout} alt="about" />
+            <Image
+              src={imgAbout}
+              alt="about"
+              data-aos="reveal-left"
+              data-aos-delay={400}
+            />
           </div>
           <div className="">
             <div className="mb-10 md:mb-24 text-center text-base text-secondary-100 font-normal">
-              <p className="mb-5">
+              <p className="mb-5" data-aos="fade-up" data-aos-delay="100">
                 A tale of a fateful trip that started from this tropic port
                 aboard this tiny ship today still wanted by the government they
                 survive as soldiers of fortune to a deluxe apartment in the sky
                 moving on up to the east side a family.
               </p>
-              <p>
+              <p data-aos="fade-up" data-aos-delay="200">
                 The government they survive as soldiers of fortune baby if
                 you've ever wondered the east side to a deluxe apartment.
               </p>
             </div>
             <div className="grid grid-cols-2 lg:grid-cols-3 gap-4">
-              <AboutCard title="Vision" icon={iconVision} />
-              <AboutCard title="Missions" icon={iconMissions} />
-              <AboutCard title="Goals" icon={iconGoals} />
+              <AboutCard title="Vision" icon={iconVision} delay={200} />
+              <AboutCard title="Missions" icon={iconMissions} delay={300} />
+              <AboutCard title="Goals" icon={iconGoals} delay={400} />
             </div>
           </div>
         </div>

@@ -18,16 +18,26 @@ const Banner = () => {
           <div className="container">
             <div className="w-full sm:w-[560px]">
               <div className="pb-2">
-                <h1 className="text-white text-2xl md:text-4xl xl:text-[55px] font-light mb-2 !leading-7 md:!leading-[45px] xl:!leading-[70px]">
+                <h1
+                  className="text-white text-2xl md:text-4xl xl:text-[55px] font-light mb-2 !leading-7 md:!leading-[45px] xl:!leading-[70px]"
+                  data-aos="fade-up"
+                  data-aos-delay="50"
+                >
                   WE IMPROVE YOUR
                   <br />
                   <b className="font-black">SALES EFFICIENCY</b>
                 </h1>
-                <p className="text-lg md:text-2xl text-white sm:pr-11">
+                <p
+                  className="text-lg md:text-2xl text-white sm:pr-11"
+                  data-aos="fade-up"
+                  data-aos-delay="150"
+                >
                   The government they survive artical of fortune
                 </p>
               </div>
-              <Button title="Contact Us" />
+              <div data-aos="fade-up" data-aos-delay="200">
+                <Button title="Contact Us" />
+              </div>
             </div>
           </div>
         </div>
@@ -38,16 +48,19 @@ const Banner = () => {
             title="Consumer Insights"
             description="The east side to a deluxe apartment in mov e on up to the east side"
             icon={iconConsumerInsights}
+            delay={200}
           />
           <HomeCard
             title="Emerging Ideas"
             description="The east side to a deluxe apartment in mov e on up to the east side"
             icon={iconEmergingIdeas}
+            delay={300}
           />
           <HomeCard
             title="Marketing Goals"
             description="The east side to a deluxe apartment in mov e on up to the east side"
             icon={iconMarketingGoals}
+            delay={400}
           />
         </div>
       </div>
